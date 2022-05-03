@@ -1,0 +1,128 @@
+.who {
+  padding-top: 36px;
+  padding-bottom: 75px;
+  background-color: #1B262F;
+  background-image: url(../../images/who-back.png);
+  background-repeat: no-repeat;
+  background-size: 1447px 421px;
+  background-position: top center;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+  }
+
+  &__left {
+    max-width: 445px;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #FBFCFE;
+  }
+
+  &__desc {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FBFCFE;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+
+  &__btn {
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    text-decoration: none;
+    border: 1px solid #FBFCFE;
+    box-sizing: border-box;
+    border-radius: 24px;
+    transition: all 0.4s;
+
+    &:hover {
+      color:#1B262F ;
+      background-color: #FBFCFE;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 62px;
+    row-gap: 39px;
+    list-style: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 992px){
+  .who {
+
+    &__container {
+      padding: 88px 20px;
+      flex-direction: column;
+    }
+
+    &__left {
+      margin-top: 64px;
+      order: 2;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .who {
+    
+    &__container {
+      padding: 80px 20px;
+    }
+
+    &__heading {
+      margin-bottom: 16px;
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    &__desc{
+      margin-bottom: 60px;
+      font-size: 15px;
+      line-height: 28px;
+    }
+
+    &__btn {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
