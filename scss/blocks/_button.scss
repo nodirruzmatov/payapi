@@ -1,1 +1,23 @@
-//bu yerda buttonlar yashaydi
+.site-btn {
+  margin: 0;
+  padding: 0;
+  padding: 15px 25px;
+  border: none;
+  font-family: 'Public Sans';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE;
+  background-color: #BA4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+
+  &:hover {
+    background-color: #DA6D97;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

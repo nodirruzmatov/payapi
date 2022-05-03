@@ -1,0 +1,49 @@
+.header {
+  padding: 40px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .sitelink {
+    margin-right: 64px;
+  }
+
+  .hamburger-menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 17px;
+    background-image: url(../../images/hamburber-menu.svg);
+    background-repeat: no-repeat;
+    background-size: 28px 17px;
+    background-position: cover;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+  .header {
+    position: relative;
+
+    .hamburger-menu {
+      display: flex;
+      margin-left: auto;
+
+    }
+
+  }
+}
+
+@media only screen and (max-width: 576px){
+  
+  .header {
+    padding: 16px 0;
+  }
+}

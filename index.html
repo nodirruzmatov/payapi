@@ -4,10 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/site-logo.svg" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
-  <title>SCSS BEM STARTER</title>
+  <title>payapi</title>
 </head>
+
 <body>
+
+  <!-- !HEADER -->
+  <header class="header ">
+    <div class="container header__container">
+
+      <a href="#" class="sitelink">
+        <img src="./images/sitelogo.svg" width="135" height="38" alt="" class="sitelogo">
+      </a>
+
+      <button class="hamburger-menu"></button>
+
+      <nav class="sitenav">
+       
+        <button class="hamburger-menu-close"></button>
+
+        <div class="dividing-line"></div>
+
+        <ul class="sitenav__list">
+
+          <li class="sitenav__item">
+            <a href="#" class="sitenav__link">Pracing</a>
+          </li>
+
+          <li class="sitenav__item">
+            <a href="#" class="sitenav__link">About</a>
+          </li>
+
+          <li class="sitenav__item">
+            <a href="#" class="sitenav__link">Contact</a>
+          </li>
+
+        </ul>
+
+        <button class="site-btn sitenav__btn">Schedule a Demo</button>
+
+      </nav>
+
+      
+
+    </div>
+  </header>
+
+  <!-- !MAIN -->
+  <main class="main">
+    
+    <!-- !HERO -->
+    <section class="hero">
+      <div class="container hero__container">
+
+        <div class="hero__left">
+          <h1 class="hero__heading">Start building with our APIs for absolutely free.</h1>
+
+          <form action="https://echo.htmlacademy.ru/" method="post" class="hero__form">
+            <input type="email" name="user_email" placeholder="Enter yuor address" required>
+            <button class="site-btn hero__btn">Schedule a Demo</button>
+          </form>
+
+          <p class="hero__desc">Have any questions?<span class="hero__desc-part"> Contact Us</span></p>
+        </div>
+
+        <picture class="hero__right">
+          <source media="(max-width:768px)" srcset="./images/hero-img2.svg">
+          <img src="./images/hero-img.png" width="263" height="500" alt="phone ">
+        </picture>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/app.js"></script>
 
 </body>
 </html>
