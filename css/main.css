@@ -1253,4 +1253,120 @@ img {
     margin-bottom: 32px;
   }
 }
+
+.footer {
+  background-color: #1B262F;
+  background-image: url(../../images/footer-back.png);
+  background-repeat: no-repeat;
+  background-size: 1440px 100px;
+  background-position: center bottom;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 31px 20px;
+  width: 100%;
+}
+
+.footer__nav {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.footer__nav-item + .footer__nav-item {
+  margin-left: 40px;
+}
+
+.footer__nav-link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.footer__nav-link:hover {
+  opacity: 1;
+}
+
+.footer__nav-link:active {
+  opacity: 0.8;
+}
+
+.footer__right {
+  margin-left: auto;
+}
+
+.footer__right-link {
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.footer__right-link:hover {
+  opacity: 0.8;
+}
+
+.footer__right-link:active {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    background-image: url(../../images/footer-back2.png);
+    background-repeat: no-repeat;
+    background-size: 768px 100px;
+    background-position: center bottom;
+  }
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__nav {
+    margin: 40px 0;
+  }
+  .footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__nav-item + .footer__nav-item {
+    margin-left: 0;
+    margin-top: 31px;
+  }
+  .footer__right {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    background-image: url(../../images/footer-back3.png);
+    background-repeat: no-repeat;
+    background-size: 376px 176px;
+    background-position: center bottom;
+  }
+}
 /*# sourceMappingURL=main.css.map */
