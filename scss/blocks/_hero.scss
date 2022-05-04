@@ -22,6 +22,8 @@
 
   &__form {
     position: relative;
+    max-width: 445px;
+    width: 100%;
 
     & > input {
       max-width: 296px;
