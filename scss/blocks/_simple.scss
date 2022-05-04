@@ -1,0 +1,151 @@
+.simple {
+  padding: 75px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+
+  &__desc {
+    margin: 0;
+    padding: 0;
+    max-width: 445px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+  }
+
+  &__rigth {
+    display: flex;
+    max-width: 566px;
+
+  }
+
+  &__img {
+    margin-right: 40px;
+  }
+
+  & img {
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+    border-radius: 40px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-top: 147px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+
+    &-img {
+      background-color: #36536B;
+      border-radius: 50%;
+      margin-bottom: 32px;
+    }
+
+    &-heading {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: -0.138462px;
+      color: #36536B;
+    }
+
+    &-desc {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: -0.115385px;
+      color: #6C8294;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1200px){
+  .simple {
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__desc {
+      max-width: 573px;
+      text-align: center;
+    }
+
+    &__right {
+      order: -1;
+      margin-bottom: 48px;
+    }
+
+    &__img {
+      margin-right: 25px;
+    }
+
+    & img {
+      border-radius: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .simple {
+    padding: 40px 0;
+
+
+    &__heading {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__desc {
+      font-size: 15px;
+      line-height: 28px;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin-top: 80px;
+    }
+
+    &__item + &__item {
+      margin-top: 48px;
+    }
+  }
+}
